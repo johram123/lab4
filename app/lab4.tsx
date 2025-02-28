@@ -8,7 +8,7 @@ const Lab4 = () => {
   
 
   const handleToggle = (location : string) => {
-    const selectedLocation = String(vacationDestinations.find((item) => item.location === location)?.location);
+    const selectedLocation = String(vacationDestinations.find((item) => item.location === location));
 
     if (clickedLocations.includes(selectedLocation)) {
       setClickedLocations(clickedLocations.filter((item) => item !== selectedLocation));

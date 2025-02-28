@@ -7,7 +7,8 @@ export default function App() {
 
     return (
         <View>
-            <Button title="To lab 1" onPress = {() => router.push("lab4")} />
+            <Button title="To lab 4" onPress = {() => router.push("lab4")} />
+            <Button title="To lab 5" onPress = {() => router.push("lab5")} />
         </View>
-    )
-};
+    );
+};  
