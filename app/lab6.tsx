@@ -61,7 +61,7 @@ const Lab6 = () => {
       await updateUser(user);
       console.log(user);
       loadTable();
-      setUserUpdateToggle(userUpdateToggle.filter((item) => item !== user.id));
+      handleToggle(user.id);
       Alert.alert("User successfully updated");
     } catch (error) {
       Alert.alert((error as Error).message);
